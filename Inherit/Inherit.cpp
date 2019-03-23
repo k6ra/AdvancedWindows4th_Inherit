@@ -2,7 +2,7 @@
 
 int main()
 {
-	STARTUPINFO si = {};
+	STARTUPINFO si = { sizeof(si) };
 	SECURITY_ATTRIBUTES saProcess, saThread;
 	PROCESS_INFORMATION piProcessB, piProcessC;
 
